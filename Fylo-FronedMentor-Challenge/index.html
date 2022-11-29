@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="index.css">
+
+
   <title>Fylo data storage component</title>
 </head>
 
 <body>
+  <footer>
+    <div class="storage-box">
+      <div class="storage-top">
+        <p>
+          You`ve used <strong>815 GB</strong> of your storage
+          185 GB Left </p>
+      </div>
+      <div class="progress-bar">
+        <progress class="progress-bar-progress" value="815" max="1000" color="red"> </progress>
+      </div>
+      <!-- <div class="progress-bar-progress"></div> -->
+      <div class="storage-units-left">
+        <p>0 GB</p>
+      </div>
+      <div class="storage-units-right">
+        <p>1000 GB</p>
+      </div>
+      </p>
 
-  You’ve used 815 GB of your storage
+    </div>
+  </footer>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
 </body>
+
 </html>

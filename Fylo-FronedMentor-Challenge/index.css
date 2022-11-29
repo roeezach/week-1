@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    --Progress-bar-gradient: hsl(6, 100%, 80%);
+    --to-hsl: (335, 100%, 65%);
+    --Site-background: hsl(229, 57%, 11%);
+    --Floating-sections: hsl(228, 56%, 26%);
+    --Text-1-color: hsl(229, 7%, 55%);
+    --Text-2-color: white;
+    --Icon-color: hsl(243, 100%, 93%);
+    margin: 0;
+    padding: 0;
+    background-color: var(--Site-background);
+    display: flex;
+}
+
+.storage-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px 30px 20px 5px;
+    width: 750px;
+    height: 12em;
+    color: var(--Text-2-color);
+    background-color: var(--Floating-sections);
+    font-family: Raleway;
+    font-size: 22.5px;
+    font-weight: regular;
+    margin-top: 80%;
+    margin-left: 200%;
+    padding: 0%;
+
+    position: relative;
+}
+
+.storage-top {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    right: 5em;
+}
+
+.storage-units-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    /* top: 2em; */
+    left: 2em;
+    /* right: 5em; */
+    bottom: 1em;
+}
+
+.storage-units-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: absolute;
+    /* top: 2em; */
+    /* left: 2em; */
+    right: 5em;
+    bottom: 1em;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: fit-content;
+    height: fit-content;
+    /* width: 65%; */
+    /* height: 1em; */
+    background-color: var(--Progress-bar-gradient);
+    border-radius: 1.5em;
+    left: 2em;
+    right: 5em;
+    bottom: 5em;
+}
+
+progress[value] {
+    /* background-color: var(--Progress-bar-gradient); */
+    width: 600px;
+    border-radius: 1.5em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* progress::-webkit-progress-bar {
+    width: 100px;
+    border: 0;
+    height: 1em;
+    border-radius: 20px;
+    color: var(--Progress-bar-gradient);
+} */
+
+/* .progress-bar-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 10%;
+    height: 1em;
+    background-color: var(--progress-to-hsl);
+    border-radius: 1.5em;
+    left: 2em;
+    right: 5em;
+    bottom: 5em;
+} */
