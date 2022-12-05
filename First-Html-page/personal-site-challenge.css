@@ -18,20 +18,24 @@ body {
     --button-text: white;
     --fotter-link-color: #0f989c;
     margin: 0;
-    display: flex;
-    flex-direction: column
 }
 
 header {
     background-color: var(--title-background);
-    text-align: center;
     font-family: var(--font-h1);
     color: var(--h1-h2-color);
     font-size: large;
     position: relative;
-    line-height: 50px;
-    margin-top: 0;
-    padding-top: 100px;
+    margin: 0;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--font-h1);
+    color: var(--h1-h2-color);
 }
 
 footer {
@@ -39,11 +43,6 @@ footer {
     color: var(--hr-fotter-text);
     text-align: center;
     padding: 2rem;
-}
-
-h1 {
-    font-family: var(--font-h1);
-    color: var(--h1-h2-color);
 }
 
 h2 {
@@ -65,9 +64,6 @@ hr {
 p {
     font-family: var(--font-main);
     font-size: 17px;
-    display: inline-block;
-    margin-block-start: 1em;
-    padding-left: 6px;
 }
 
 button:hover {
@@ -105,13 +101,15 @@ button:hover {
     align-items: center;
     position: relative;
     padding-bottom: 1rem;
+    gap: 2rem
 }
 
 .aligment-wrapper {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
     padding: 2%;
+    gap: 5rem;
 }
 
 .debugging {
@@ -123,13 +121,16 @@ button:hover {
 }
 
 .sub-header {
-    font-family: var(--font-h2to6);
-    font-size: 30px;
-    line-height: 15px;
+    font-family: var(--font-main);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .underline {
     text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
 }
 
 .dotted {
