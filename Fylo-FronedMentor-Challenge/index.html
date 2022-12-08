@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
-
 
   <title>Fylo data storage component</title>
 </head>
@@ -34,25 +32,30 @@
           <div class="fylo-images-upl">
             <img src="assets/icon-upload.svg">
           </div>
+          <div>
+            <label class="upload-image-label" for="files">Upload Image</label>
+            <input class="upload-image-input" type="file" id="files" onchange="return ValidateFiles(this)" multiple>
+          </div>
         </div>
       </div>
 
       <div class="storage-box">
         <div class="storage-top">
           <p>
-            You`ve used <strong>815 GB</strong> of your storage
-          <p>
+            You`ve used <strong id="storageUsed"></strong><strong> MB</strong> of your storage
+          </p>
           <div class="left-stroage-conainer">
-            <p class="left-par-center"><strong>185</strong> GB Left</p>
+            <p class="left-par-center"><strong id="storageLeft"></strong> MB Left</p>
           </div>
           <div class="triangle"></div>
         </div>
-        <progress class="progress-bar-progress" value="815" max="1000" color="red"> </progress>
+
+        <progress class="progress-bar-progress" value="0" max="10" id="myProgress"></progress>
         <div class="storage-units-left">
-          <p>0 GB</p>
+          <p>0 MB</p>
         </div>
-        <div class="storage-units-right">
-          <p>1000 GB</p>
+        <div class="storage-units-right" id="maxStorage">
+          <p>10 MB</p>
         </div>
         </p>
       </div>
@@ -61,5 +64,7 @@
 
 
 </body>
+
+<script src="index.js"></script>
 
 </html>
